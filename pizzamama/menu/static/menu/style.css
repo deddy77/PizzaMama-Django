@@ -1,5 +1,5 @@
 body{
-    background: url("Images/menu_background.jpg") no-repeat center center fixed;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url("Images/menu_background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -54,6 +54,7 @@ h1 {
     font-size: 14px;
     color: #c8c8c8;
     margin-top: 4px;
+    width: 320px;
 }
 
 .menu_list_label{
