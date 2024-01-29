@@ -20,6 +20,10 @@ High-Quality Images: The app includes high-quality images of the pizzas, giving 
 
 No installation requiered
 
+## API REST
+
+https://deddy.pythonanywhere.com/api/GetPizza
+
 MIT License
 
 Copyright (c) [2024] [WOOD EDDY DONALD JEAN JULIEN]
