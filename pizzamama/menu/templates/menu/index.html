@@ -1,12 +1,27 @@
+{% load static %}
 <html>
 <head>
+    <link rel="stylesheet" href="{% static 'menu/style.css' %}">
     <title>
        Menu of the pizzas
     </title>
 </head>
 <body>
-    <h1>The Pizzas</h1>
-
+    <img id = "small_logo" src = "{% static 'menu/images/small_logo.png' %}" alt = "Pizza Logo">
+   <div class ="menu_title">
+       <h1>The Pizzas</h1></div>
+            <div class ="menu_list">
+                {% for pizza in pizzas %}
+                <div class = "menu_list_item">
+                    <span class ="menu_list_title">{{pizza.name}}</span>
+                    <span class="menu_list_price">{{pizza.price | floatformat:2}}$</span>
+                    <span class="menu_list_ingredient">{{pizza.ingredients}}</span>
+                    {% if pizza.vegetarian %}
+                    <span class="menu_list_label">VEGETARIAN</span>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
 
 </body>
 
